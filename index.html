@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Traffic Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>India Traffic Management & Prediction System</h1>
+        </header>
+        
+        <div class="main-content">
+            <div class="controls">
+                <div class="input-group">
+                    <label for="start-points">Starting Points:</label>
+                    <select id="start-points" multiple>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="pune">Pune</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="lucknow">Lucknow</option>
+                        <option value="haldwani">Haldwani</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="destination">Destination:</label>
+                    <select id="destination">
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="jaipur">Jaipur</option>
+                        <option value="pune">Pune</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="lucknow">Lucknow</option>
+                        <option value="haldwani">Haldwani</option>
+                    </select>
+                </div>
+                
+                <div class="input-group">
+                    <label for="algorithm">Algorithm:</label>
+                    <select id="algorithm">
+                        <option value="dijkstra">Dijkstra's Algorithm</option>
+                        <option value="astar">A* Algorithm</option>
+                    </select>
+                </div>
+                
+                <button id="calculate">Calculate Routes</button>
+                <button id="simulate-traffic">Simulate Traffic</button>
+            </div>
+            
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+        </div>
+        
+        <div class="results">
+            <h2>Route Comparison</h2>
+            <div id="route-results"></div>
+        </div>
+    </div>
+    
+    <script src="graph-data.js"></script>
+    <script src="algorithms.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
