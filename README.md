@@ -1,0 +1,1 @@
+Traffic Management and Prediction System is an intelligent solution designed to optimize urban mobility by analyzing real-time distance data, predicting congestion patterns, and suggesting optimal routes. This project leverages machine learning, data analytics, and graph algorithms to improve traffic flow and reduce commute times.
