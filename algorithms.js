@@ -1,4 +1,4 @@
-// Dijkstra's Algorithm implementation
+// Dijkstra Algorithm implementation
 function dijkstra(graph, start, end) {
     const distances = {};
     const previous = {};
