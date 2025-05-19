@@ -17,7 +17,7 @@ const indiaCities = {
     vadodara: { name: "Vadodara", lat: 22.3072, lng: 73.1812 }
 };
 
-// Updated graph with more accurate distances (in km) and realistic connections
+// Updated graph with more accurate distances  and realistic connections
 const indiaRoadNetwork = {
     mumbai: [
         { node: "pune", distance: 150, traffic: 0.3 },
@@ -95,7 +95,7 @@ const indiaRoadNetwork = {
     ]
 };
 
-// More accurate heuristic function using Haversine formula
+//  heuristic function using Haversine formula
 function heuristic(cityA, cityB) {
     const toRad = x => x * Math.PI / 180;
     const R = 6371; // Earth radius in km
